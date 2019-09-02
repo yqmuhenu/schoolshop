@@ -17,6 +17,7 @@ public class ShopDaoTest extends BaseTest {
     private ShopDao shopDao;
 
     @Test
+    //@Ignore
     public void testInsertShop(){
         Shop shop = new Shop();
 
@@ -50,7 +51,7 @@ public class ShopDaoTest extends BaseTest {
     @Test
     public void testUpdateShop(){
         Shop shop = new Shop();
-        shop.setShopId(1L);
+        shop.setShopId(38L);
 
         Area area = new Area();
         area.setAreaId(1);
@@ -60,8 +61,8 @@ public class ShopDaoTest extends BaseTest {
         shop.setArea(area);
         shop.setShopCategory(shopCategory);
 
-        shop.setShopDesc("测试描述");
-        shop.setShopAddr("测试地址");
+        shop.setShopDesc("测试的描述");
+        shop.setShopAddr("测试的地址");
 
         int effectedNum = shopDao.updateShop(shop);
         assertEquals(1,effectedNum);
