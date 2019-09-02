@@ -1,0 +1,48 @@
+2019-08-31 09:47:40.642[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id = ? ORDER BY priority DESC 
+2019-08-31 09:47:40.692[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 1(Long)
+2019-08-31 09:47:40.712[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2019-08-31 10:24:08.585[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id = ? ORDER BY priority DESC 
+2019-08-31 10:24:08.615[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 1(Long)
+2019-08-31 10:24:08.635[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2019-08-31 10:32:17.037[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ==>  Preparing: SELECT * FROM tb_shop_category WHERE shop_category_id = ? ORDER BY priority DESC; 
+2019-08-31 10:32:17.067[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ==> Parameters: 1(Integer)
+2019-08-31 10:32:17.087[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - <==      Total: 1
+2019-08-31 10:34:12.497[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ==>  Preparing: SELECT * FROM tb_shop_category WHERE shop_category_id = ? ORDER BY priority DESC; 
+2019-08-31 10:34:12.527[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ==> Parameters: 1(Integer)
+2019-08-31 10:34:12.547[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - <==      Total: 1
+2019-08-31 10:34:33.233[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id = ? ORDER BY priority DESC; 
+2019-08-31 10:34:33.263[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 1(Long)
+2019-08-31 10:34:33.283[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ====>  Preparing: SELECT * FROM tb_shop_category WHERE shop_category_id = ? ORDER BY priority DESC; 
+2019-08-31 10:34:33.283[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ====> Parameters: 1(Integer)
+2019-08-31 10:34:33.283[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - <====      Total: 1
+2019-08-31 10:34:33.293[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2019-08-31 10:40:36.986[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id = ? ORDER BY priority DESC; 
+2019-08-31 10:40:37.016[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 1(Long)
+2019-08-31 10:40:37.026[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ====>  Preparing: SELECT * FROM tb_shop_category WHERE shop_category_id = ? ORDER BY priority DESC; 
+2019-08-31 10:40:37.026[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - ====> Parameters: 1(Integer)
+2019-08-31 10:40:37.036[main] DEBUG c.igeek.dao.ShopCategoryDao.queryShopCategoryById - <====      Total: 1
+2019-08-31 10:40:37.036[main] DEBUG com.igeek.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
+2019-08-31 13:02:51.505[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc, shop_addr,phone,shop_img,priority,create_time,last_edit_time, enable_status,advice) VALUES(?,?,?, ?,?,?,?,?,?, ?,?,?,?); 
+2019-08-31 13:02:51.535[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 1(Integer), 1(Long), 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), null, 1(Integer), 2019-08-31 13:02:51.465(Timestamp), 2019-08-31 13:02:51.465(Timestamp), 0(Integer), 审核中(String)
+2019-08-31 13:02:51.535[main] DEBUG com.igeek.dao.ShopDao.insertShop - <==    Updates: 1
+2019-08-31 13:02:51.745[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ?, area_id = ?, shop_category_id = ? WHERE shop_id=? 
+2019-08-31 13:02:51.745[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), upload\item\shop\18\2019083113025172171.jpg(String), 1(Integer), 2019-08-31 13:02:51.465(Timestamp), 0(Integer), 审核中(String), 1(Integer), 1(Long), 18(Long)
+2019-08-31 13:02:51.755[main] DEBUG com.igeek.dao.ShopDao.updateShop - <==    Updates: 1
+2019-08-31 14:40:14.079[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc, shop_addr,phone,shop_img,priority,create_time,last_edit_time, enable_status,advice) VALUES(?,?,?, ?,?,?,?,?,?, ?,?,?,?); 
+2019-08-31 14:40:14.109[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 1(Integer), 1(Long), 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), null, 1(Integer), 2019-08-31 14:40:14.039(Timestamp), 2019-08-31 14:40:14.039(Timestamp), 0(Integer), 审核中(String)
+2019-08-31 14:40:14.109[main] DEBUG com.igeek.dao.ShopDao.insertShop - <==    Updates: 1
+2019-08-31 14:40:14.309[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ?, area_id = ?, shop_category_id = ? WHERE shop_id=? 
+2019-08-31 14:40:14.309[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), upload\item\shop\19\2019083114401413704.jpg(String), 1(Integer), 2019-08-31 14:40:14.039(Timestamp), 0(Integer), 审核中(String), 1(Integer), 1(Long), 19(Long)
+2019-08-31 14:40:14.309[main] DEBUG com.igeek.dao.ShopDao.updateShop - <==    Updates: 1
+2019-08-31 16:52:01.119[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc, shop_addr,phone,shop_img,priority,create_time,last_edit_time, enable_status,advice) VALUES(?,?,?, ?,?,?,?,?,?, ?,?,?,?); 
+2019-08-31 16:52:01.149[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 1(Integer), 1(Long), 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), null, 1(Integer), 2019-08-31 16:52:01.089(Timestamp), 2019-08-31 16:52:01.089(Timestamp), 0(Integer), 审核中(String)
+2019-08-31 16:52:01.159[main] DEBUG com.igeek.dao.ShopDao.insertShop - <==    Updates: 1
+2019-08-31 16:52:01.319[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ?, area_id = ?, shop_category_id = ? WHERE shop_id=? 
+2019-08-31 16:52:01.319[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), upload\item\shop\21\2019083116520175221.jpg(String), 1(Integer), 2019-08-31 16:52:01.089(Timestamp), 0(Integer), 审核中(String), 1(Integer), 1(Long), 21(Long)
+2019-08-31 16:52:01.329[main] DEBUG com.igeek.dao.ShopDao.updateShop - <==    Updates: 1
+2019-08-31 16:54:13.781[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc, shop_addr,phone,shop_img,priority,create_time,last_edit_time, enable_status,advice) VALUES(?,?,?, ?,?,?,?,?,?, ?,?,?,?); 
+2019-08-31 16:54:13.811[main] DEBUG com.igeek.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 1(Integer), 1(Long), 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), null, 1(Integer), 2019-08-31 16:54:13.751(Timestamp), 2019-08-31 16:54:13.751(Timestamp), 0(Integer), 审核中(String)
+2019-08-31 16:54:13.811[main] DEBUG com.igeek.dao.ShopDao.insertShop - <==    Updates: 1
+2019-08-31 16:54:14.011[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==>  Preparing: UPDATE tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ?, area_id = ?, shop_category_id = ? WHERE shop_id=? 
+2019-08-31 16:54:14.011[main] DEBUG com.igeek.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺1(String), 测试1(String), 测试1(String), 测试1(String), upload\item\shop\22\2019083116541328112.jpg(String), 1(Integer), 2019-08-31 16:54:13.751(Timestamp), 0(Integer), 审核中(String), 1(Integer), 1(Long), 22(Long)
+2019-08-31 16:54:14.011[main] DEBUG com.igeek.dao.ShopDao.updateShop - <==    Updates: 1

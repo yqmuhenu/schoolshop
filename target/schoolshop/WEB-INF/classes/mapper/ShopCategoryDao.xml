@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.igeek.dao.ShopCategoryDao">
+
+    <resultMap id="shopCategoryMap" type="shopCategory">
+        <id property="shopCategoryId" column="shop_category_id"/>
+        <result property="shopCategoryName" column="shop_category_name"/>
+        <result property="shopCategoryDesc" column="shop_category_desc"/>
+        <result property="shopCategoryImg" column="shop_category_img"/>
+        <result property="priority" column="priority"/>
+        <result property="createTime" column="create_time"/>
+        <result property="lastEditTime" column="last_edit_time"/>
+        <association property="parent" column="parent_id" javaType="shopCategory" select="com.igeek.dao.ShopCategoryDao.queryShopCategoryById"/>
+    </resultMap>
+
+    <!-- 根据条件查询店铺类别(parent_id不为空) -->
+    <select id="queryShopCategory" resultMap="shopCategoryMap">
+        SELECT
+        shop_category_id,
+        shop_category_name,
+        shop_category_desc,
+        shop_category_img,
+        priority,
+        create_time,
+        last_edit_time,
+        parent_id
+        FROM tb_shop_category
+        <where>
+            <if test="shopCategoryCondition != null">
+                and parent_id IS NOT NULL
+            </if>
+            <if test="shopCategoryCondition.parent != null">
+                and parent_id = #{shopCategoryCondition.parent.shopCategoryId}
+            </if>
+        </where>
+        ORDER BY
+        priority DESC;
+    </select>
+
+    <!-- 根据shopCategoryId店铺类别 -->
+    <select id="queryShopCategoryById" parameterType="int" resultType="shopCategory">
+        SELECT *
+        FROM tb_shop_category
+        <where>
+            shop_category_id = #{id}
+        </where>
+        ORDER BY
+        priority DESC;
+    </select>
+
+</mapper>
