@@ -6,7 +6,30 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6171c23c-4fdd-4a8c-ad27-99feec8c8a4c" name="Default Changelist" comment="" />
+    <list default="true" id="6171c23c-4fdd-4a8c-ad27-99feec8c8a4c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igeek/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igeek/dao/ShopDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igeek/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igeek/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igeek/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igeek/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igeek/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igeek/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/igeek/dao/AreaDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/igeek/dao/AreaDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/igeek/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/igeek/service/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/igeek/dao/AreaDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/igeek/dao/AreaDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/igeek/dao/ShopDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/igeek/dao/ShopDaoTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,82 +42,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-              <folding>
-                <element signature="e#1582#1598#0" expanded="true" />
-                <element signature="e#1640#1660#0" expanded="true" />
-                <element signature="e#1692#1710#0" expanded="true" />
-                <element signature="e#1753#1771#0" expanded="true" />
-                <element signature="e#1900#1916#0" expanded="true" />
-                <element signature="e#1965#1984#0" expanded="true" />
-                <element signature="e#2010#2028#0" expanded="true" />
-                <element signature="e#2071#2089#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1098">
-              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,34 +71,28 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/entity/ProductImg.java" />
         <option value="$PROJECT_DIR$/src/main/resources/JdbcConfig.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/AreaDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/service/AreaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/AreaDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/service/impl/AreaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/igeek/dao/AreaDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/igeek/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/igeek/service/AreaServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/web/superadmin/AreaController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/ShopDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/enums/ShopStateEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/dto/ShopExecution.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/exceptions/ShopOperationException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/service/ShopService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/igeek/util/ImgUtilTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/igeek/util/PathUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/util/PathUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/service/impl/ShopServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopAdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/entity/ShopCategory.java" />
@@ -162,23 +104,30 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/commonutil.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web2.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/util/CodeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/util/HttpServletRequestUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopManagementController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/igeek/service/ShopServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/igeek/test/test.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceHolder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/igeek/dao/AreaDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igeek/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igeek/util/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igeek/dao/ShopDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js" />
+        <option value="$PROJECT_DIR$/src/test/java/com/igeek/service/ShopServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igeek/service/impl/ShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js" />
       </list>
     </option>
   </component>
@@ -213,11 +162,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-183" />
-    <option name="y" value="153" />
-    <option name="width" value="1947" />
-    <option name="height" value="1191" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="45" />
+    <option name="y" value="105" />
+    <option name="width" value="1725" />
+    <option name="height" value="1212" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -225,18 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="schoolshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="schoolshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -297,17 +234,6 @@
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="split" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="dto" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -336,6 +262,37 @@
               <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="util" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="web" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shopadmin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -344,7 +301,148 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="spring" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="html" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="html" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="schoolshop" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="schoolshop" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="igeek" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="schoolshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolshop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -357,28 +455,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/igeek/util" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Files\Javaweb\ideaProjects\schoolshop\src\main\webapp\WEB-INF\html\shop" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.igeek.dao" />
-      <recent name="com.igeek.service" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Files\Javaweb\ideaProjects\schoolshop\src\main\java\com\igeek\util" />
       <recent name="D:\Files\Javaweb\ideaProjects\schoolshop\src\main\webapp\WEB-INF" />
       <recent name="D:\Files\Javaweb\ideaProjects\schoolshop\src\main\webapp\resources\js" />
       <recent name="D:\Files\Javaweb\ideaProjects\schoolshop\src\main\java\com\igeek\service\impl" />
       <recent name="D:\Files\Javaweb\ideaProjects\schoolshop\src\main\resources\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.igeek.dao" />
+      <recent name="com.igeek.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Files\Javaweb\ideaProjects\schoolshop\src\main\webapp\WEB-INF\html\shop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -394,33 +492,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.0.M26">
-    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.igeek.util.ImageUtil" />
-      <module name="schoolshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.igeek.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.igeek.test.test" />
-      <module name="schoolshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.igeek.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopCategoryDaoTest.testQueryShopCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopDaoTest.testInsertShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="schoolshop" />
       <extension name="coverage">
         <pattern>
@@ -429,14 +501,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.igeek.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.igeek.dao.ShopCategoryDaoTest" />
-      <option name="METHOD_NAME" value="testQueryShopCategory" />
+      <option name="MAIN_CLASS_NAME" value="com.igeek.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testInsertShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopCategoryDaoTest.testQueryShopCategoryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopDaoTest.testQueryByShopId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="schoolshop" />
       <extension name="coverage">
         <pattern>
@@ -445,14 +517,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.igeek.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.igeek.dao.ShopCategoryDaoTest" />
-      <option name="METHOD_NAME" value="testQueryShopCategoryById" />
+      <option name="MAIN_CLASS_NAME" value="com.igeek.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testQueryByShopId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopServiceTest.testAddShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShopDaoTest.testUpdateShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.igeek.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.igeek.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.igeek.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="testUpdateShop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.testGetByShopId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="schoolshop" />
       <extension name="coverage">
         <pattern>
@@ -462,7 +550,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.igeek.service" />
       <option name="MAIN_CLASS_NAME" value="com.igeek.service.ShopServiceTest" />
-      <option name="METHOD_NAME" value="testAddShop" />
+      <option name="METHOD_NAME" value="testGetByShopId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopServiceTest.testModifyShop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.igeek.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.igeek.service" />
+      <option name="MAIN_CLASS_NAME" value="com.igeek.service.ShopServiceTest" />
+      <option name="METHOD_NAME" value="testModifyShop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -543,20 +647,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ImageUtil" />
-      <item itemvalue="Application.test" />
-      <item itemvalue="JUnit.ShopServiceTest.testAddShop" />
-      <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
-      <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategoryById" />
+      <item itemvalue="JUnit.ShopDaoTest.testInsertShop" />
+      <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
+      <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
+      <item itemvalue="JUnit.ShopServiceTest.testGetByShopId" />
+      <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.0.M26" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
-        <item itemvalue="JUnit.ShopServiceTest.testAddShop" />
-        <item itemvalue="Application.ImageUtil" />
-        <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategory" />
-        <item itemvalue="JUnit.ShopCategoryDaoTest.testQueryShopCategoryById" />
+        <item itemvalue="JUnit.ShopServiceTest.testModifyShop" />
+        <item itemvalue="JUnit.ShopServiceTest.testGetByShopId" />
+        <item itemvalue="JUnit.ShopDaoTest.testQueryByShopId" />
+        <item itemvalue="JUnit.ShopDaoTest.testUpdateShop" />
+        <item itemvalue="JUnit.ShopDaoTest.testInsertShop" />
       </list>
     </recent_temporary>
   </component>
@@ -576,43 +680,61 @@
       <workItem from="1567215096306" duration="26454000" />
       <workItem from="1567334144913" duration="2800000" />
       <workItem from="1567385066896" duration="2657000" />
+      <workItem from="1567472587641" duration="902000" />
+      <workItem from="1567479430813" duration="1506000" />
+      <workItem from="1567492450144" duration="24313000" />
     </task>
+    <task id="LOCAL-00001" summary="测试idea通过git提交">
+      <created>1567425705740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567425705740</updated>
+    </task>
+    <task id="LOCAL-00002" summary="数据库主从复制测试通过">
+      <created>1567436090056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567436090056</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopCategoryDaoTest_testQueryShopCategory - 2019.08.31 at 09h 47m 41s.xml">
-      <configuration name="ShopCategoryDaoTest.testQueryShopCategory" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 16h 43m 10s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCategoryDaoTest_testQueryShopCategory - 2019.08.31 at 10h 24m 09s.xml">
-      <configuration name="ShopCategoryDaoTest.testQueryShopCategory" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 16h 46m 23s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCategoryDaoTest_testQueryShopCategoryById - 2019.08.31 at 10h 32m 17s.xml">
-      <configuration name="ShopCategoryDaoTest.testQueryShopCategoryById" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 20h 50m 51s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCategoryDaoTest_testQueryShopCategoryById - 2019.08.31 at 10h 34m 13s.xml">
-      <configuration name="ShopCategoryDaoTest.testQueryShopCategoryById" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 20h 51m 17s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCategoryDaoTest_testQueryShopCategory - 2019.08.31 at 10h 34m 33s.xml">
-      <configuration name="ShopCategoryDaoTest.testQueryShopCategory" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 20h 57m 47s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCategoryDaoTest_testQueryShopCategory - 2019.08.31 at 10h 40m 37s.xml">
-      <configuration name="ShopCategoryDaoTest.testQueryShopCategory" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 20h 59m 29s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_testAddShop - 2019.08.31 at 13h 02m 52s.xml">
-      <configuration name="ShopServiceTest.testAddShop" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 21h 01m 19s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_testAddShop - 2019.08.31 at 14h 40m 14s.xml">
-      <configuration name="ShopServiceTest.testAddShop" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 21h 22m 00s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_testAddShop - 2019.08.31 at 16h 52m 01s.xml">
-      <configuration name="ShopServiceTest.testAddShop" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 21h 22m 48s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopServiceTest_testAddShop - 2019.08.31 at 16h 54m 14s.xml">
-      <configuration name="ShopServiceTest.testAddShop" configurationId="JUnit" />
+    <history-entry file="ShopServiceTest_testModifyShop - 2019.09.03 at 21h 29m 13s.xml">
+      <configuration name="ShopServiceTest.testModifyShop" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124180000" />
+    <option name="totallyTimeSpent" value="157174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -624,10 +746,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1231" height="815" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1231" height="815" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26270455" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27820843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -637,8 +758,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27836612" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36459908" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6248109" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26928896" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.50832075" />
@@ -650,7 +771,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32980332" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.22995462" />
       <window_info anchor="right" id="Maven" order="0" weight="0.32988802" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -664,6 +785,51 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="测试idea通过git提交" />
+    <MESSAGE value="数据库主从复制测试通过" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据库主从复制测试通过" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -691,53 +857,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/dao/AreaDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="19" column="5" selection-start-line="12" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/PersonInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/Area.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/enums/ShopStateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -771,16 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dto/ShopExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/exceptions/ShopOperationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -798,33 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/ShopCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/ShopCategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -832,20 +914,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/ShopDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopCategoryDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -859,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopAdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -874,16 +935,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#401#402#0" expanded="true" />
             <element signature="e#444#445#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/service/ShopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -901,27 +952,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/echarts.simple.min.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/jquery.form.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/echarts.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/util/CodeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/util/HttpServletRequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -929,120 +959,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/util/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/service/ShopServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1085">
-          <caret line="49" column="83" lean-forward="true" selection-start-line="49" selection-start-column="83" selection-end-line="49" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5373">
-          <caret line="199" column="18" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/test/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3672">
-          <caret line="136" column="66" selection-start-line="136" selection-start-column="66" selection-end-line="136" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopManagementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="118" column="17" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1066,29 +986,268 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/service/impl/ShopServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/dao/AreaDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-694">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="189">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSourceHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3267">
+          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/split/DynamicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/ShopCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/Area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/entity/PersonInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="22" column="30" selection-start-line="13" selection-start-column="4" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopCategoryDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
-          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dao/ShopDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/dao/ShopDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-775">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="e#1582#1598#0" expanded="true" />
-            <element signature="e#1640#1660#0" expanded="true" />
-            <element signature="e#1692#1710#0" expanded="true" />
-            <element signature="e#1753#1771#0" expanded="true" />
-            <element signature="e#1900#1916#0" expanded="true" />
-            <element signature="e#1965#1984#0" expanded="true" />
-            <element signature="e#2010#2028#0" expanded="true" />
-            <element signature="e#2071#2089#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/dto/ShopExecution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/service/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/enums/ShopStateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopoperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="908">
+          <caret line="113" column="34" lean-forward="true" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/igeek/service/ShopServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/util/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/util/CodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/web/shopadmin/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="202" column="12" selection-start-line="202" selection-start-column="12" selection-end-line="202" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6590#6605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igeek/service/impl/ShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2827#2828#0" expanded="true" />
+            <element signature="e#2879#2880#0" expanded="true" />
           </folding>
         </state>
       </provider>

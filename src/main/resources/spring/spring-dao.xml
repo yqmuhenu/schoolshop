@@ -14,11 +14,6 @@
     <!--2.配置连接池-->
     <bean id="abstractDataSource" abstract="true"
           class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-        <!--<property name="driverClass" value="${jdbc.driver}"/>
-        <property name="jdbcUrl" value="${jdbc.url}"/>
-        <property name="user" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>-->
-
         <!-- c3p0连接池的私有属性 -->
         <property name="maxPoolSize" value="30" />
         <property name="minPoolSize" value="10" />
@@ -29,15 +24,15 @@
         <!-- 当获取连接失败重试次数 -->
         <property name="acquireRetryAttempts" value="2" />
     </bean>
-    <!-- 主数据库配置 -->
+    <!-- 主数据库连接池配置 -->
     <bean id="master" parent="abstractDataSource">
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.master.url}"/>
         <property name="user" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
     </bean>
-    <!-- 从数据库配置 -->
-    <bean id="slaver" parent="abstractDataSource">
+    <!-- 从数据库连接池配置 -->
+    <bean id="slave" parent="abstractDataSource">
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.slave.url}"/>
         <property name="user" value="${jdbc.username}"/>
@@ -47,8 +42,14 @@
     <bean id="dynamicDataSource" class="com.igeek.dao.split.DynamicDataSource">
         <property name="targetDataSources" >
             <map>
-                <entity>hghj</entity>
+                <entry value-ref="master" key="master"></entry>
+                <entry value-ref="slave" key="slave"></entry>
             </map>
+        </property>
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy">
+        <property name="targetDataSource">
+            <ref bean="dynamicDataSource"/>
         </property>
     </bean>
 

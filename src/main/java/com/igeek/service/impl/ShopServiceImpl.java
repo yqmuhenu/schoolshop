@@ -21,6 +21,22 @@ public class ShopServiceImpl implements ShopService {
     private ShopDao shopDao;
 
     /**
+     * 为shop添加图片
+     *
+     * @param shop
+     * @param shopImg
+     * @param originalFileName
+     */
+    private void addShopImg(Shop shop, InputStream shopImg, String originalFileName) {
+        //获取shop图片目录的相对值路径
+        String dest = PathUtil.getShopImagePath(shop.getShopId());
+        String shopImgAddr = ImageUtil.generateThumbnail(shopImg, dest, originalFileName);
+        //System.out.println(shopImgAddr);
+        //为shop设置图片(shopImg)
+        shop.setShopImg(shopImgAddr);
+    }
+
+    /**
      * 使用注解控制事务方法的优点：
      * 1.开发团队达成一致约定，明确标注事务方法的编程风格
      * 2.保证事务方法的执行时间尽可能短，不要穿插其他网络操作，RPC/HTTP请求或者剥离到事务方法外部
@@ -28,8 +44,8 @@ public class ShopServiceImpl implements ShopService {
      */
     @Override
     @Transactional
-    public ShopExecution addShop(Shop shop, InputStream shopImg,String originalFileName)
-            throws RuntimeException {
+    public ShopExecution addShop(Shop shop, InputStream shopImg, String originalFileName)
+            throws ShopOperationException {
         if (shop == null) {
             return new ShopExecution(ShopStateEnum.NULL_SHOP_INFO);
         }
@@ -47,7 +63,7 @@ public class ShopServiceImpl implements ShopService {
                 if (shopImg != null) {
                     //存储图片
                     try {
-                        addShopImg(shop, shopImg,originalFileName);
+                        addShopImg(shop, shopImg, originalFileName);
                     } catch (Exception e) {
                         throw new ShopOperationException("addShopImg error: "
                                 + e.getMessage());
@@ -62,21 +78,43 @@ public class ShopServiceImpl implements ShopService {
         } catch (Exception e) {
             throw new ShopOperationException("insertShop error: " + e.getMessage());
         }
-        return new ShopExecution(ShopStateEnum.CHECK,shop);
+        return new ShopExecution(ShopStateEnum.CHECK, shop);
     }
 
-    /**
-     * 为shop添加图片
-     * @param shop
-     * @param shopImg
-     * @param originalFileName
-     */
-    private void addShopImg(Shop shop, InputStream shopImg,String originalFileName) {
-        //获取shop图片目录的相对值路径
-        String dest = PathUtil.getShopImagePath(shop.getShopId());
-        String shopImgAddr = ImageUtil.generateThumbnail(shopImg, dest,originalFileName);
-        //为shop设置图片(shopImg)
-        shop.setShopImg(shopImgAddr);
+    @Override
+    public Shop getByShopId(long shopId) {
+        return shopDao.queryByShopId(shopId);
+    }
+
+    @Override
+    @Transactional
+    public ShopExecution modifyShop(Shop shop, InputStream shopImg, String originalFileName) throws ShopOperationException {
+
+        if (shop == null || shop.getShopId() == null) {
+            return new ShopExecution(ShopStateEnum.NULL_SHOPID);
+        } else {
+            try {
+                //1.判断是否需要处理图片
+                if (shopImg != null && originalFileName != null && !"".equals(originalFileName)) {
+                    Shop tempShop = shopDao.queryByShopId(shop.getShopId());
+                    if (tempShop.getShopImg() != null) {
+                        ImageUtil.deleteFileOrPath(tempShop.getShopImg());
+                    }
+                    addShopImg(shop, shopImg, originalFileName);
+                }
+                //2.更改店铺信息
+                shop.setLastEditTime(new Date());
+                int effectedNum = shopDao.updateShop(shop);
+                if (effectedNum <= 0) {
+                    return new ShopExecution(ShopStateEnum.INNER_ERROR);
+                } else {// 更改店铺信息成功
+                    shop = shopDao.queryByShopId(shop.getShopId());
+                    return new ShopExecution(ShopStateEnum.SUCCESS, shop);
+                }
+            } catch (Exception e) {
+                throw new ShopOperationException("modifyShop error: " + e.getMessage());
+            }
+        }
     }
 
 	/*@Autowired

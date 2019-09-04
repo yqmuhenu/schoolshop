@@ -1,9 +1,45 @@
 $(function() {
 
+    var shopId = getQueryString('shopId');
+    var isEdit = shopId ? true : false;
+
     var initUrl = '/schoolshop/shopadmin/getshopinitinfo';
+    var shopInfoUrl = '/schoolshop/shopadmin/getshopbyid?shopId=' + shopId;
+
     var registerShopUrl = '/schoolshop/shopadmin/registershop';
+    var editShopUrl = '/schoolshop/shopadmin/modifyshop';
+
     alert(initUrl);
-    getShopInitInfo();
+    if (!isEdit){
+        getShopInitInfo();
+        editShopUrl = registerShopUrl;
+    } else {
+        getShopInfo(shopId);
+    }
+
+    function getShopInfo(shopId) {
+        $.getJSON(shopInfoUrl, function(data) {
+            if (data.success) {
+                var shop = data.shop;
+                $('#shop-name').val(shop.shopName);
+                $('#shop-addr').val(shop.shopAddr);
+                $('#shop-phone').val(shop.phone);
+                $('#shop-desc').val(shop.shopDesc);
+                var shopCategory = '<option data-id="'
+                    + shop.shopCategory.shopCategoryId + '" selected>'
+                    + shop.shopCategory.shopCategoryName + '</option>';
+                var tempAreaHtml = '';
+                data.areaList.map(function(item, index) {
+                    tempAreaHtml += '<option data-id="' + item.areaId + '">'
+                        + item.areaName + '</option>';
+                });
+                $('#shop-category').html(shopCategory);
+                $('#shop-category').attr('disabled','disabled');//店铺类别不能修改
+                $('#area').html(tempAreaHtml);
+                $("#area option[data-id='" + shop.area.areaId + "']").attr("selected","selected");
+            }
+        });
+    }
 
     function getShopInitInfo() {
         $.getJSON(initUrl, function(data) {
@@ -26,6 +62,10 @@ $(function() {
 
     $('#submit').click(function() {
         var shop = {};//json对象
+
+        if(isEdit){//如果是更新店铺信息，则需要传入shopId
+            shop.shopId = shopId;
+        }
 
         shop.shopName = $('#shop-name').val();
         shop.shopAddr = $('#shop-addr').val();
@@ -54,7 +94,7 @@ $(function() {
         }
         formData.append("verifyCodeActual", verifyCodeActual);
         $.ajax({
-            url : registerShopUrl,
+            url : editShopUrl,
             type : 'POST',
             // contentType: "application/x-www-form-urlencoded; charset=utf-8",
             data : formData,
@@ -77,5 +117,4 @@ $(function() {
             }
         });
     });
-
 });

@@ -33,3 +33,12 @@ function getQueryString(name) {
 function changeVerifyCode(img) {
 	img.src = "../Kaptcha?" + Math.floor(Math.random() * 100);
 }
+
+function getQueryString(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);//substr(1),这里设置为1，是为了把url中的?号去掉
+	if (r != null) {
+		return decodeURIComponent(r[2]);
+	}
+	return '';
+}

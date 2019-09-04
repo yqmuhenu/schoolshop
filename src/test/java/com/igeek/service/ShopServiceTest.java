@@ -7,6 +7,7 @@ import com.igeek.entity.PersonInfo;
 import com.igeek.entity.Shop;
 import com.igeek.entity.ShopCategory;
 import com.igeek.enums.ShopStateEnum;
+import com.igeek.exceptions.ShopOperationException;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -20,7 +21,7 @@ public class ShopServiceTest extends BaseTest {
     private ShopService shopService;
 
     @Test
-    public void testAddShop() throws IOException {
+    public void testAddShop() throws ShopOperationException,FileNotFoundException {
         Shop shop = new Shop();
 
         PersonInfo owner = new PersonInfo();
@@ -51,8 +52,31 @@ public class ShopServiceTest extends BaseTest {
         assertEquals(ShopStateEnum.CHECK.getState(),shopExecution.getState());
     }
 
+    //@Ignore
+    @Test
+    public void testGetByShopId() throws Exception {
+        long shopId = 1;
+        Shop shop = shopService.getByShopId(shopId);
+        System.out.println(shop);
+    }
 
-	/*@Test
+    @Test
+    public void testModifyShop() throws ShopOperationException,FileNotFoundException {
+        Shop shop = shopService.getByShopId(1L);
+
+        shop.setShopName("更新的店铺1");
+        shop.setLastEditTime(new Date());
+
+        File shopImg = new File("C:\\Users\\30624\\Pictures\\ico/littleyellowperson.jpg");
+        InputStream in = new FileInputStream(shopImg);
+
+        ShopExecution shopExecution = shopService.modifyShop(shop,in,shopImg.getName());
+        //assertEquals(ShopStateEnum.CHECK.getState(),shopExecution.getState());
+        System.out.println(shopExecution.getShop().getShopImg());
+    }
+
+	/*
+	@Test
 	public void testGetByEmployeeId() throws Exception {
 		long employeeId = 1;
 		ShopExecution shopExecution = shopService.getByEmployeeId(employeeId);
@@ -61,13 +85,6 @@ public class ShopServiceTest extends BaseTest {
 			System.out.println(shop);
 		}
 	}
-
-	@Ignore
-	@Test
-	public void testGetByShopId() throws Exception {
-		long shopId = 1;
-		Shop shop = shopService.getByShopId(shopId);
-		System.out.println(shop);
-	}*/
+	*/
 
 }
