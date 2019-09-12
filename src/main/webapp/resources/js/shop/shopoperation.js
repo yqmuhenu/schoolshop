@@ -3,13 +3,13 @@ $(function() {
     var shopId = getQueryString('shopId');
     var isEdit = shopId ? true : false;
 
-    var initUrl = '/schoolshop/shopadmin/getshopinitinfo';
-    var shopInfoUrl = '/schoolshop/shopadmin/getshopbyid?shopId=' + shopId;
+    var initUrl = '/schoolshop/shop/getshopinitinfo';
+    var shopInfoUrl = '/schoolshop/shop/getshopbyid?shopId=' + shopId;
 
-    var registerShopUrl = '/schoolshop/shopadmin/registershop';
-    var editShopUrl = '/schoolshop/shopadmin/modifyshop';
+    var registerShopUrl = '/schoolshop/shop/registershop';
+    var editShopUrl = '/schoolshop/shop/modifyshop';
 
-    alert(initUrl);
+    //alert(initUrl);
     if (!isEdit){
         getShopInitInfo();
         editShopUrl = registerShopUrl;

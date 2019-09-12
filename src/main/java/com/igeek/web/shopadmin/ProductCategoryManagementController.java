@@ -6,13 +6,16 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.igeek.dto.ProductCategoryExecution;
 import com.igeek.dto.Result;
 import com.igeek.entity.ProductCategory;
 import com.igeek.entity.Shop;
 import com.igeek.enums.ProductCategoryStateEnum;
+import com.igeek.exceptions.ProductCategoryOperationException;
 import com.igeek.service.ProductCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -23,14 +26,16 @@ public class ProductCategoryManagementController {
 	@Autowired
 	private ProductCategoryService productCategoryService;
 
+	/**
+	 * 查询当前店铺下的商品类别列表（根据shopId查询）
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping(value = "/getproductcategorylist", method = RequestMethod.GET)
 	@ResponseBody
 	private Result<List<ProductCategory>> listProductCategorys(
 			HttpServletRequest request) {
-		/*Shop shop = new Shop();
-		shop.setShopId(1L);//测试使用
-		request.getSession().setAttribute("currentShop",shop);*/
-
+		//获取到当前店铺
 		Shop currentShop = (Shop) request.getSession().getAttribute(
 				"currentShop");
 		List<ProductCategory> list = null;
@@ -44,7 +49,13 @@ public class ProductCategoryManagementController {
 		}
 	}
 
-	/*@RequestMapping(value = "/addproductcategorys", method = RequestMethod.POST)
+	/**
+	 * 为当前店铺添加商品类别
+	 * @param productCategoryList
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping(value = "/addproductcategorys", method = RequestMethod.POST)
 	@ResponseBody
 	private Map<String, Object> addProductCategorys(
 			@RequestBody List<ProductCategory> productCategoryList,
@@ -66,12 +77,11 @@ public class ProductCategoryManagementController {
 					modelMap.put("success", false);
 					modelMap.put("errMsg", pe.getStateInfo());
 				}
-			} catch (RuntimeException e) {
+			} catch (ProductCategoryOperationException e) {
 				modelMap.put("success", false);
 				modelMap.put("errMsg", e.toString());
 				return modelMap;
 			}
-
 		} else {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", "请至少输入一个商品类别");
@@ -79,6 +89,12 @@ public class ProductCategoryManagementController {
 		return modelMap;
 	}
 
+	/**
+	 * 删除当前店铺下的商品类别（根据获取到的productCategoryId进行删除）
+	 * @param productCategoryId
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping(value = "/removeproductcategory", method = RequestMethod.POST)
 	@ResponseBody
 	private Map<String, Object> removeProductCategory(Long productCategoryId,
@@ -103,12 +119,10 @@ public class ProductCategoryManagementController {
 				modelMap.put("errMsg", e.toString());
 				return modelMap;
 			}
-
 		} else {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", "请至少选择一个商品类别");
 		}
 		return modelMap;
-	}*/
-
+	}
 }

@@ -1,6 +1,7 @@
 package com.igeek.web.shopadmin;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.igeek.dto.ImageHolder;
 import com.igeek.dto.ShopExecution;
 import com.igeek.entity.Area;
 import com.igeek.entity.PersonInfo;
@@ -30,7 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/shopadmin")
+@RequestMapping("/shop")
 public class ShopManagementController {
     @Autowired
     private AreaService areaService;
@@ -104,7 +105,8 @@ public class ShopManagementController {
              */
             ShopExecution se = null;
             try {
-                se = shopService.addShop(shop,shopImg.getInputStream(),shopImg.getOriginalFilename());
+                ImageHolder imageHolder = new ImageHolder(shopImg.getOriginalFilename(),shopImg.getInputStream());
+                se = shopService.addShop(shop,imageHolder);
                 /**
                  * 返回结果
                  */
@@ -200,17 +202,18 @@ public class ShopManagementController {
             //Session TODO
             owner.setUserId(1L);
             shop.setOwner(owner);*/
-            System.out.println("shop : " + shop);
+            //System.out.println("shop : " + shop);
             /**
              * 调用业务层方法修改店铺信息
              */
             ShopExecution se = null;
             try {
                 if(shopImg == null){
-                    se = shopService.modifyShop(shop,null,null);
+                    se = shopService.modifyShop(shop,null);
                 }else {
                     //shopImg.getInputStream()
-                    se = shopService.modifyShop(shop,shopImg.getInputStream(),shopImg.getOriginalFilename());
+                    ImageHolder imageHolder = new ImageHolder(shopImg.getOriginalFilename(),shopImg.getInputStream());
+                    se = shopService.modifyShop(shop,imageHolder);
                 }
                 /**
                  * 返回结果
@@ -235,5 +238,64 @@ public class ShopManagementController {
             modelMap.put("errMsg","请输入店铺信息");
             return modelMap;
         }
+    }
+
+    @RequestMapping(value = "/getshoplist", method = RequestMethod.GET)
+    @ResponseBody
+    private Map<String, Object> getShopList(HttpServletRequest request) {
+        Map<String, Object> modelMap = new HashMap<String, Object>();
+        PersonInfo user = new PersonInfo();
+        user.setUserId(1L);//
+        user.setName("test");
+        request.getSession().setAttribute("user",user);//
+        user = (PersonInfo) request.getSession().getAttribute("user");
+
+        //long employeeId = user.getUserId();
+        /*if (hasAccountBind(request, employeeId)) {
+            modelMap.put("hasAccountBind", true);
+        } else {
+            modelMap.put("hasAccountBind", false);
+        }*/
+        //List<Shop> shopList = new ArrayList<Shop>();
+        try {
+            Shop shopCondition = new Shop();
+            shopCondition.setOwner(user);
+            ShopExecution shopExecution = shopService.getShopList(shopCondition,0,100);
+            //list = shopExecution.getShopList();
+            modelMap.put("shopList", shopExecution.getShopList());
+            modelMap.put("user", user);
+            modelMap.put("success", true);
+            // 列出店铺成功之后，将店铺放入session中作为权限验证依据，即该帐号只能操作它自己的店铺
+            //request.getSession().setAttribute("shopList", list);
+        } catch (Exception e) {
+            //e.printStackTrace();
+            modelMap.put("success", false);
+            modelMap.put("errMsg", e.toString());
+        }
+        return modelMap;
+    }
+
+    @RequestMapping(value = "/getshopmanagementinfo",method = RequestMethod.GET)
+    @ResponseBody
+    private Map<String,Object> getShopManagementInfo(HttpServletRequest request){
+        Map<String, Object> modelMap = new HashMap<String, Object>();
+        long shopId = HttpServletRequestUtil.getLong(request,"shopId");
+        if(shopId <= 0){//没有传入shopId
+            Object currentShopObj = request.getSession().getAttribute("currentShop");
+            if(currentShopObj == null){
+                modelMap.put("redirect",true);
+                modelMap.put("url","/schoolshop/shop/shoplist");
+            }else {
+                Shop currentShop = (Shop)currentShopObj;
+                modelMap.put("redirect",false);
+                modelMap.put("shopId",currentShop.getShopId());
+            }
+        }else {
+            Shop currentShop = new Shop();
+            currentShop.setShopId(shopId);
+            request.getSession().setAttribute("currentShop",currentShop);
+            modelMap.put("redirect",false);
+        }
+        return modelMap;
     }
 }

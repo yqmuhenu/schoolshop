@@ -1,6 +1,7 @@
 package com.igeek.service;
 
 import com.igeek.BaseTest;
+import com.igeek.dto.ImageHolder;
 import com.igeek.dto.ShopExecution;
 import com.igeek.entity.Area;
 import com.igeek.entity.PersonInfo;
@@ -13,12 +14,34 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.*;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
 public class ShopServiceTest extends BaseTest {
     @Autowired
     private ShopService shopService;
+
+    @Test
+    public void testQueryShopList() throws Exception {
+        Shop shopCondition = new Shop();
+        ShopExecution shopExecution;
+
+        shopExecution = shopService.getShopList(shopCondition, 0, 2);
+        assertEquals(2, shopExecution.getShopList().size());
+        assertEquals(16, shopExecution.getCount());
+
+        shopCondition.setShopName("测试");
+        shopExecution = shopService.getShopList(shopCondition, 0, 3);
+        assertEquals(3, shopExecution.getShopList().size());
+        assertEquals(9, shopExecution.getCount());
+
+        shopCondition.setShopId(1L);
+        shopExecution = shopService.getShopList(shopCondition, 0, 3);
+        assertEquals(0, shopExecution.getShopList().size());
+        assertEquals(0, shopExecution.getCount());
+
+    }
 
     @Test
     public void testAddShop() throws ShopOperationException,FileNotFoundException {
@@ -47,8 +70,8 @@ public class ShopServiceTest extends BaseTest {
         shop.setAdvice("审核中");
 
         File shopImg = new File("C:\\Users\\30624\\Pictures\\ico/littleyellowperson.jpg");
-        InputStream in = new FileInputStream(shopImg);
-        ShopExecution shopExecution = shopService.addShop(shop,in,shopImg.getName());
+        ImageHolder imageHolder = new ImageHolder(shopImg.getName(),new FileInputStream(shopImg));
+        ShopExecution shopExecution = shopService.addShop(shop,imageHolder);
         assertEquals(ShopStateEnum.CHECK.getState(),shopExecution.getState());
     }
 
@@ -68,9 +91,9 @@ public class ShopServiceTest extends BaseTest {
         shop.setLastEditTime(new Date());
 
         File shopImg = new File("C:\\Users\\30624\\Pictures\\ico/littleyellowperson.jpg");
-        InputStream in = new FileInputStream(shopImg);
+        ImageHolder imageHolder = new ImageHolder(shopImg.getName(),new FileInputStream(shopImg));
 
-        ShopExecution shopExecution = shopService.modifyShop(shop,in,shopImg.getName());
+        ShopExecution shopExecution = shopService.modifyShop(shop,imageHolder);
         //assertEquals(ShopStateEnum.CHECK.getState(),shopExecution.getState());
         System.out.println(shopExecution.getShop().getShopImg());
     }

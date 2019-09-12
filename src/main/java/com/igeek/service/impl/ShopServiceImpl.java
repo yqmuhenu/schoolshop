@@ -1,19 +1,21 @@
 package com.igeek.service.impl;
 
 import com.igeek.dao.ShopDao;
+import com.igeek.dto.ImageHolder;
 import com.igeek.dto.ShopExecution;
 import com.igeek.entity.Shop;
 import com.igeek.enums.ShopStateEnum;
 import com.igeek.exceptions.ShopOperationException;
 import com.igeek.service.ShopService;
 import com.igeek.util.ImageUtil;
+import com.igeek.util.PageCalculator;
 import com.igeek.util.PathUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.InputStream;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class ShopServiceImpl implements ShopService {
@@ -22,15 +24,13 @@ public class ShopServiceImpl implements ShopService {
 
     /**
      * 为shop添加图片
-     *
      * @param shop
-     * @param shopImg
-     * @param originalFileName
+     * @param thumbnail
      */
-    private void addShopImg(Shop shop, InputStream shopImg, String originalFileName) {
+    private void addShopImg(Shop shop, ImageHolder thumbnail) {
         //获取shop图片目录的相对值路径
         String dest = PathUtil.getShopImagePath(shop.getShopId());
-        String shopImgAddr = ImageUtil.generateThumbnail(shopImg, dest, originalFileName);
+        String shopImgAddr = ImageUtil.generateThumbnail(thumbnail, dest);
         //System.out.println(shopImgAddr);
         //为shop设置图片(shopImg)
         shop.setShopImg(shopImgAddr);
@@ -44,7 +44,7 @@ public class ShopServiceImpl implements ShopService {
      */
     @Override
     @Transactional
-    public ShopExecution addShop(Shop shop, InputStream shopImg, String originalFileName)
+    public ShopExecution addShop(Shop shop, ImageHolder thumbnail)
             throws ShopOperationException {
         if (shop == null) {
             return new ShopExecution(ShopStateEnum.NULL_SHOP_INFO);
@@ -60,10 +60,10 @@ public class ShopServiceImpl implements ShopService {
             if (effectedNum <= 0) {
                 throw new ShopOperationException("店铺创建失败");
             } else {
-                if (shopImg != null) {
+                if (thumbnail.getImage() != null) {
                     //存储图片
                     try {
-                        addShopImg(shop, shopImg, originalFileName);
+                        addShopImg(shop, thumbnail);
                     } catch (Exception e) {
                         throw new ShopOperationException("addShopImg error: "
                                 + e.getMessage());
@@ -88,19 +88,19 @@ public class ShopServiceImpl implements ShopService {
 
     @Override
     @Transactional
-    public ShopExecution modifyShop(Shop shop, InputStream shopImg, String originalFileName) throws ShopOperationException {
+    public ShopExecution modifyShop(Shop shop, ImageHolder thumbnail) throws ShopOperationException {
 
         if (shop == null || shop.getShopId() == null) {
             return new ShopExecution(ShopStateEnum.NULL_SHOPID);
         } else {
             try {
                 //1.判断是否需要处理图片
-                if (shopImg != null && originalFileName != null && !"".equals(originalFileName)) {
+                if (thumbnail.getImage() != null && thumbnail.getImageName() != null && !"".equals(thumbnail.getImageName())) {
                     Shop tempShop = shopDao.queryByShopId(shop.getShopId());
                     if (tempShop.getShopImg() != null) {
                         ImageUtil.deleteFileOrPath(tempShop.getShopImg());
                     }
-                    addShopImg(shop, shopImg, originalFileName);
+                    addShopImg(shop, thumbnail);
                 }
                 //2.更改店铺信息
                 shop.setLastEditTime(new Date());
@@ -117,29 +117,27 @@ public class ShopServiceImpl implements ShopService {
         }
     }
 
-	/*@Autowired
-	private ShopDao shopDao;
+    @Override
+    public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
+        int rowIndex = PageCalculator.calculateRowIndex(pageIndex, pageSize);
+        List<Shop> shopList = shopDao.queryShopList(shopCondition, rowIndex,
+                pageSize);//获取需要的店铺列表
+        int count = shopDao.queryShopCount(shopCondition);//获取符合条件的店铺总数
+        ShopExecution se = new ShopExecution();
+        if (shopList != null) {
+            se.setShopList(shopList);
+            se.setCount(count);
+        } else {
+            se.setState(ShopStateEnum.INNER_ERROR.getState());
+        }
+        return se;
+    }
+
+	/*
 	@Autowired
 	private ShopAuthMapDao shopAuthMapDao;
 	@Autowired
 	private ShopCategoryDao shopCategoryDao;
-
-	@Override
-	public ShopExecution getShopList(Shop shopCondition, int pageIndex,
-			int pageSize) {
-		int rowIndex = PageCalculator.calculateRowIndex(pageIndex, pageSize);
-		List<Shop> shopList = shopDao.queryShopList(shopCondition, rowIndex,
-				pageSize);
-		int count = shopDao.queryShopCount(shopCondition);
-		ShopExecution se = new ShopExecution();
-		if (shopList != null) {
-			se.setShopList(shopList);
-			se.setCount(count);
-		} else {
-			se.setState(ShopStateEnum.INNER_ERROR.getState());
-		}
-		return se;
-	}
 
 	@Override
 	public ShopExecution getByEmployeeId(long employeeId)
@@ -148,43 +146,6 @@ public class ShopServiceImpl implements ShopService {
 		ShopExecution se = new ShopExecution();
 		se.setShopList(shopList);
 		return se;
-	}
-
-	@Override
-	public Shop getByShopId(long shopId) {
-		return shopDao.queryByShopId(shopId);
-	}
-
-
-
-	@Override
-	@Transactional
-	public ShopExecution modifyShop(Shop shop, CommonsMultipartFile shopImg)
-			throws RuntimeException {
-		if (shop == null || shop.getShopId() == null) {
-			return new ShopExecution(ShopStateEnum.NULL_SHOPID);
-		} else {
-			try {
-				if (shopImg != null) {
-					Shop tempShop = shopDao.queryByShopId(shop.getShopId());
-					if (tempShop.getShopImg() != null) {
-						FileUtil.deleteFile(tempShop.getShopImg());
-					}
-					addShopImg(shop, shopImg);
-				}
-				shop.setLastEditTime(new Date());
-				int effectedNum = shopDao.updateShop(shop);
-				if (effectedNum <= 0) {
-					return new ShopExecution(ShopStateEnum.INNER_ERROR);
-				} else {// 创建成功
-					shop = shopDao.queryByShopId(shop.getShopId());
-					return new ShopExecution(ShopStateEnum.SUCCESS, shop);
-				}
-			} catch (Exception e) {
-				throw new RuntimeException("modifyShop error: "
-						+ e.getMessage());
-			}
-		}
 	}
     */
 

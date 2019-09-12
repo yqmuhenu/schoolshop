@@ -9,12 +9,38 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
 public class ShopDaoTest extends BaseTest {
     @Autowired
     private ShopDao shopDao;
+
+    @Test
+    public void testQueryShopList() throws Exception {
+        Shop shopCondition = new Shop();
+        List<Shop> shopList;
+        int count;
+
+        shopList = shopDao.queryShopList(shopCondition, 0, 2);
+        assertEquals(2, shopList.size());
+        count = shopDao.queryShopCount(shopCondition);
+        assertEquals(16, count);
+
+        shopCondition.setShopName("测试");
+        shopList = shopDao.queryShopList(shopCondition, 0, 3);
+        assertEquals(3, shopList.size());
+        count = shopDao.queryShopCount(shopCondition);
+        assertEquals(9, count);
+
+        shopCondition.setShopId(1L);
+        shopList = shopDao.queryShopList(shopCondition, 0, 3);
+        assertEquals(1, shopList.size());
+        count = shopDao.queryShopCount(shopCondition);
+        assertEquals(1, count);
+
+    }
 
     @Test
     public void testQueryByShopId(){
